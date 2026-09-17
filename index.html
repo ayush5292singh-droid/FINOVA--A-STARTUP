@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <title>FINOCA — Finance Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h1>FINOCA</h1>
+      <p>SMART FINANCE</p>
+      <button class="nav active" data-page="dashboard">Dashboard</button>
+      <button class="nav" data-page="transactions">Transactions</button>
+      <button class="nav" data-page="loans">Loan Manager</button>
+      <button class="nav" data-page="budgets">Budgets</button>
+      <button class="nav" data-page="goals">Savings Goals</button>
+      <button class="nav" data-page="pro">Finance Pro</button>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <small>WELCOME BACK</small>
+          <h2 id="pageTitle">Dashboard</h2>
+        </div>
+        <button id="resetBtn" class="ghost">Reset</button>
+      </header>
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden"></div>
+  <script src="script.js"></script>
+</body>
+</html>
